@@ -39,6 +39,7 @@ for j in range(int(sys.stdin.readline().strip())):
     nodes = {key : Node(key) for key in range(1, n + 1)}
     maxTotal = 0
     increasingEdges = sorted(increasingEdges, key = lambda x: x[2])
+    
     for edge in increasingEdges:
         u, v, w = edge
         uRoot, vRoot = find(nodes[u]), find(nodes[v])
@@ -48,6 +49,7 @@ for j in range(int(sys.stdin.readline().strip())):
     nodes = {key : Node(key) for key in range(1, n + 1)}
     minTotal = 0
     decreasingEdges = increasingEdges[::-1]
+    
     for edge in decreasingEdges:
         u, v, w = edge
         uRoot, vRoot = find(nodes[u]), find(nodes[v])
