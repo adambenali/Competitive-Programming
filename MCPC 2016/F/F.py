@@ -1,4 +1,4 @@
-for _ in range(int(input()):
+for _ in range(int(input())):
     line = input().split()
     x, y = int(line[0]), int(line[1])
     s = line[2]
