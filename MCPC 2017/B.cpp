@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    freopen("self.in", "r", stdin);
+    // freopen("self.in", "r", stdin);
     int t;
     string s;
     cin >> t;
